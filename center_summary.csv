@@ -1,0 +1,21 @@
+Center_Code,Center_Name,City,Region,Urban,Total_Transplants,Most_Common_Payment
+PAAE-TX1,Albert Einstein Medical Center,Philadelphia,Southeast,True,10072,Medicare
+PAAG-TX1,Allegheny General Hospital,Pittsburgh,Southwest,True,12524,Medicare
+PACC-TX1,Crozer-Chester Medical Center,Chester,Southeast,True,428,Medicare
+PACH-TX1,UPMC Children's Hospital of Pittsburgh,Pittsburgh,Southwest,True,2088,Medicare
+PACP-TX1,Children's Hospital of Philadelphia,Philadelphia,Southeast,True,2160,Other
+PAGM-TX1,Geisinger Medical Center,Danville,Central,False,6816,Other
+PAHE-TX1,Penn State Milton S Hershey Medical Center,Hershey,Central,False,7480,Medicare
+PAHH-TX1,Pinnacle Health System at Harrisburg Hospital,Harrisburg,Central,False,6296,Medicare
+PAHM-TX1,Hahnemann University Hospital,Philadelphia,Southeast,True,8000,Medicare
+PALH-TX1,The Lankenau Hospital,Wynnewood,Southeast,True,2556,Medicare
+PALV-TX1,Lehigh Valley Hospital,Allentown,Northeast,True,8480,Medicare
+PAPH-TX1,UPMC Hamot,Erie,Northwest,False,500,Medicare
+PAPT-TX1,University of Pittsburgh Medical Center,Pittsburgh,Southwest,True,27012,Medicare
+PARH-TX1,Reading Hospital,Reading,Southeast,False,28,Other
+PASC-TX1,St. Christopher's Hospital for Children,Philadelphia,Southeast,True,920,Other
+PATJ-TX1,Thomas Jefferson University Hospital,Philadelphia,Southeast,True,13052,Medicare
+PATU-TX1,Temple University Hospital,Philadelphia,Southeast,True,4208,Medicare
+PAUP-TX1,Hospital of the University of Pennsylvania,Philadelphia,Southeast,True,24948,Medicare
+PAVA-TX1,VA Pittsburgh Healthcare System,Pittsburgh,Southwest,True,3216,Other
+PAWV-TX1,Geisinger Wyoming Valley Medical Ctr,Wilkes-Barre,Northeast,False,484,Other

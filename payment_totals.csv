@@ -1,0 +1,19 @@
+Payment_Category,Donor_Type,Transplant_Count
+CHIP,Deceased Donor,60
+CHIP,Living Donor,78
+Medicaid,Deceased Donor,2968
+Medicaid,Living Donor,948
+Medicare,Deceased Donor,26128
+Medicare,Living Donor,5794
+Other,Deceased Donor,51038
+Other,Living Donor,19792
+Other_Government,Deceased Donor,248
+Other_Government,Living Donor,92
+Private_Insurance,Deceased Donor,13066
+Private_Insurance,Living Donor,10816
+Self_Pay_Uninsured,Deceased Donor,100
+Self_Pay_Uninsured,Living Donor,130
+Unknown,Deceased Donor,6854
+Unknown,Living Donor,1514
+VA,Deceased Donor,1326
+VA,Living Donor,316
