@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pennsylvania Organ Transplant Equity Project</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        /* --- Navigation Bar --- */
+        .navbar {
+            background: #fff;
+            padding: 15px 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: flex-end; /* Pushes items to the right */
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Ensures nav stays on top */
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: 600;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+
+        .nav-link:hover {
+            background-color: #f0f4ff;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .hero p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        /* Styling for the main image */
+        .hero-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            max-height: 400px; 
+            object-fit: cover;
+        }
+
+        /* --- Main Content --- */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        section {
+            background: white;
+            margin: 30px 0;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            scroll-margin-top: 80px; /* Adds spacing when clicking "About" link */
+        }
+        
+        h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+        
+        ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            font-size: 1.05em;
+        }
+
+        /* --- Dashboard Embed Styling --- */
+        .dashboard-embed {
+            margin: 30px 0;
+            padding: 30px;
+            background: #f0f4ff;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .dashboard-embed p {
+            font-size: 1.1em;
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            background: white;
+        }
+        
+        /* --- About Box (Yellow Removed) --- */
+        .about-box {
+            /* Removed yellow background and border styling */
+            margin-top: 20px;
+        }
+        
+        /* --- Mobile Responsiveness --- */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 40px 20px;
+            }
+            .hero h1 {
+                font-size: 1.8em;
+            }
+            .hero p {
+                font-size: 1em;
+            }
+            section {
+                padding: 25px;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#about-section" class="nav-link">About</a>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Pennsylvania Organ Transplant Equity Project</h1>
+            <p>A simple way to explore who is getting organ transplants in Pennsylvania, and how factors like race, money, and place might shape access to care.</p>
+            
+            <img src="Website_pic.jpg" alt="Organ Transplant Concept Image" class="hero-image">
+        </div>
+    </div>
+
+    <div class="container">
+        <section>
+            <h2>Welcome</h2>
+            
+            <p>This project looks at organ transplants in the state of Pennsylvania. An organ transplant is when a person with a very sick organ, like a heart or kidney, receives a healthy one from a donor. This dashboard helps us see where transplants are happening, who is getting them, and how this connects to things like race, insurance, and where people live.</p>
+            
+            <p>The numbers in this dashboard come from public data on organ transplants and waiting lists, along with information from the census about Pennsylvania counties. I cleaned and combined these datasets so we can look at patterns by county, race and ethnicity, payment type (like private insurance or Medicaid/Medicare), and transplant center. The data does not show any names or private details, only totals and groups.</p>
+            
+            <p>You can use this dashboard to explore questions about fairness and access. You can check which counties have more transplants, which groups are more or less represented, and where transplant centers are located. You can change filters, compare places, and use what you see to ask deeper questions about justice, health, and who gets a chance at life-saving care.</p>
+        </section>
+
+        <section>
+            <h2>Key Numbers on the Dashboard</h2>
+            
+            <p>The dashboard tracks a few important numbers that help us understand organ transplants in Pennsylvania.</p>
+            
+            <ul>
+                <li><strong>Number of transplants</strong> – how many transplants were done in a place or time period.</li>
+                <li><strong>People on the waiting list</strong> – how many people are waiting for an organ.</li>
+                <li><strong>Race and ethnicity</strong> – how transplants and waiting lists look across different racial and ethnic groups.</li>
+                <li><strong>Payment type</strong> – whether people are using private insurance, Medicaid, Medicare, or other payment sources.</li>
+                <li><strong>County and region</strong> – where people live and how transplant patterns differ by location.</li>
+                <li><strong>Transplant centers</strong> – which hospitals or medical centers are doing transplants.</li>
+            </ul>
+            
+            <p>You can combine these numbers using filters to see patterns, differences, and possible gaps.</p>
+        </section>
+
+        <section>
+            <h2>How to Use the Dashboard</h2>
+            
+            <p>The dashboard is interactive, which means you can click and change what you see.</p>
+            
+            <ul>
+                <li>Scroll down to see all the charts and maps.</li>
+                <li>Use the filters (like year, county, race, payment type) to change the view.</li>
+                <li>Hover over bars or areas on the map to see exact numbers and labels.</li>
+                <li>Look for patterns – for example, which counties have higher transplant counts, or how race and payment type relate to the numbers.</li>
+            </ul>
+
+            <div class="dashboard-embed">
+                <p>You can explore the live dashboard below:</p>
+                
+                <iframe 
+                    src="https://patransplantequity.streamlit.app/?embed=true" 
+                    height="850" 
+                    title="PA Transplant Equity Dashboard">
+                </iframe>
+                
+                <p style="margin-top: 15px; font-size: 0.9em;">
+                    <a href="https://patransplantequity.streamlit.app/" target="_blank" style="color: #667eea; text-decoration: none; font-weight: bold;">
+                        Click here to open dashboard in a full window &rarr;
+                    </a>
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>About Transplant Centers</h2>
+            
+            <p>A transplant center is a hospital or clinic that is allowed to perform organ transplants. These centers decide which patients to list, manage the medical tests, and perform the surgery. Where these centers are located can make a big difference for how easy or hard it is for people to get care.</p>
+            
+            <p>In the dashboard, you might see a "Centers" filter or a section that lists transplant centers. You can:</p>
+            
+            <ul>
+                <li>Click on a center's name to focus on that center.</li>
+                <li>Turn centers on or off in the filter to compare them.</li>
+                <li>Use this to see which counties are linked to which centers.</li>
+            </ul>
+            
+            <p>You may also see a button that says "Download centers (CSV)".</p>
+            
+            <ul>
+                <li>"CSV" is a simple file type that works like a spreadsheet.</li>
+                <li>If you click this, you get a file with a table of transplant centers (for example, center name, city, and other details).</li>
+                <li>You can open this file in Excel, Google Sheets, or another spreadsheet tool to do your own analysis or make your own charts.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Why This Matters</h2>
+            
+            <p>Organ transplants can save lives. But not everyone has the same chance to get a transplant. Where you live, what kind of insurance you have, and your race or ethnicity can all affect your path to care. Looking at the data helps us see where things might be unfair.</p>
+            
+            <p>This dashboard is not here to give all the answers. Instead, it is here to help us ask better questions, such as:</p>
+            
+            <ul>
+                <li>Do some groups get transplants more often than others?</li>
+                <li>Are some counties or communities being left behind?</li>
+                <li>How might money, race, and geography shape who gets listed and who gets transplanted?</li>
+            </ul>
+            
+            <p>These questions connect to larger ideas about justice, rights, and what a fair health system should look like.</p>
+        </section>
+
+        <section id="about-section">
+            <h2>About This Project</h2>
+            
+            <div class="about-box">
+                <p>My name is Tinotenda Chibvuri. I am an Industrial and Systems Engineering student at Lehigh University, interested in using technology solve real world problems. I created this dashboard as part of a course on religion, ethics, and society. The project focus was on organ donation and transplant ethics.</p>
+                
+                <p>By bringing together data, maps, and simple visuals, I hope this project helps people see patterns, think about fairness, and start conversations about how we can make organ transplant access more just for everyone.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
