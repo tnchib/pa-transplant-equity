@@ -22,7 +22,7 @@ import streamlit as st
 st.set_page_config(page_title="PA Transplant Equity Dashboard", layout="wide")
 
 # Default data folder (next to this file)
-DEFAULT_DATA_DIR = Path(__file__).resolve().parent / "merged_data"
+DEFAULT_DATA_DIR = Path(__file__).resolve().parent
 
 # Persist last-used data path across reruns
 if "data_root" not in st.session_state:
